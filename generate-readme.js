@@ -9,6 +9,7 @@ const orderedCategories = ['languages', 'frameworks', 'databases', 'applications
 const featuredRepos = [{
         name: "Lyrics viewer",
         url: "https://github.com/kelishrestha/lyrics-viewer",
+        demo_url: "https://lyrics-viewer-yaqu.onrender.com/",
         description: "View lyrics and translations for songs with Genius API and lyrics API",
         languages: ["Typescript"],
         image: 'assets/applications/lyrics-viewer-logo.png',
@@ -16,6 +17,7 @@ const featuredRepos = [{
     {
         name: 'Character coding',
         url: 'https://github.com/kelishrestha/character-coding',
+        demo_url: '',
         description: 'Creating characters with neural networks',
         languages: ["Python"],
         image: ''
@@ -23,6 +25,7 @@ const featuredRepos = [{
     {
         name: 'Audit Tracker (ruby gem)',
         url: 'https://github.com/kelishrestha/audit_tracker',
+        demo_url: '',
         description: 'Auditing github PRs for security audits',
         languages: ["Ruby"],
         image: ''
@@ -30,6 +33,7 @@ const featuredRepos = [{
     {
         name: 'Opentok Insights',
         url: 'https://github.com/kelishrestha/ot_insights_api_react',
+        demo_url: 'https://kelishrestha.github.io/ot_insights_api_react/',
         description: 'Opentok Insights API with React',
         languages: ["React"],
         image: ''
@@ -37,6 +41,7 @@ const featuredRepos = [{
     {
         name: 'POEditor Viewer',
         url: 'https://github.com/kelishrestha/poeditor_app',
+        demo_url: '',
         description: 'View translations with POEditor API',
         languages: ["Sinatra"],
         image: ''
@@ -44,6 +49,7 @@ const featuredRepos = [{
     {
         name: 'API Documentation',
         url: 'https://github.com/kelishrestha/postman-doc-gen',
+        demo_url: '',
         description: 'Creating api documentation with postman and swagger specs',
         languages: ["Python", "Shell"],
         image: ''
@@ -120,7 +126,7 @@ let content = `
 
 featuredRepos.forEach(details => {
     content += `<li>
-      <a href="${details.url}" target="_blank">
+      <a href="${details.demo_url || details.url}" target="_blank">
         ${details.name}
       </a>
       &nbsp; in ${_.join(details.languages, ', ')}

@@ -48,7 +48,7 @@
 <section id="featured-repos">
   <h3>Featured Repositories</h3>
   <ul><li>
-      <a href="https://github.com/kelishrestha/lyrics-viewer" target="_blank">
+      <a href="https://lyrics-viewer-yaqu.onrender.com/" target="_blank">
         Lyrics viewer
       </a>
       &nbsp; in Typescript
@@ -63,7 +63,7 @@
       </a>
       &nbsp; in Ruby
     </li><li>
-      <a href="https://github.com/kelishrestha/ot_insights_api_react" target="_blank">
+      <a href="https://kelishrestha.github.io/ot_insights_api_react/" target="_blank">
         Opentok Insights
       </a>
       &nbsp; in React
