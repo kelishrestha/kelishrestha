@@ -24,7 +24,9 @@
   <p>
     <span>🌱 I’m currently learning <strong>Artificial Intelligence</strong></span>
     <br/>
-    <span>💬 Ask me about Ruby/Rails & ReactJS</span>
+    <span>💬 Ask me about Ruby/Rails, ReactJS, Project Management, Scrum</span>
+    <br/>
+    <span>🏅 Certified Scrum Master since 2020</span>
     <br/>
     <span>🤝 I’m available for freelancing.</span>
     <br/>
@@ -43,6 +45,33 @@
     <img src="https://img.shields.io/badge/reactjs-blue?logo=react&style=for-the-badge" />&nbsp;
   </p>
 </section>
+<section id="featured-repos">
+  <h3>Featured Repositories</h3>
+  <ul><li>
+      <a href="https://github.com/kelishrestha/lyrics-viewer" target="_blank">
+        Lyrics viewer in Typescript
+      </a>
+    </li><li>
+      <a href="https://github.com/kelishrestha/character-coding" target="_blank">
+        Character coding in Python
+      </a>
+    </li><li>
+      <a href="https://github.com/kelishrestha/audit_tracker" target="_blank">
+        Audit Tracker (ruby gem) in Ruby
+      </a>
+    </li><li>
+      <a href="https://github.com/kelishrestha/ot_insights_api_react" target="_blank">
+        Opentok Insights in React
+      </a>
+    </li><li>
+      <a href="https://github.com/kelishrestha/poeditor_app" target="_blank">
+        POEditor Viewer in Sinatra
+      </a>
+    </li><li>
+      <a href="https://github.com/kelishrestha/postman-doc-gen" target="_blank">
+        API Documentation in Python, Shell
+      </a>
+    </li></ul></section>
 
 ---
 

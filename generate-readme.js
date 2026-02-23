@@ -6,6 +6,49 @@ const USERNAME = "kelishrestha";
 const REPO = "kelishrestha";
 const BRANCH = "main";
 const orderedCategories = ['languages', 'frameworks', 'databases', 'applications', 'platforms', 'packages'];
+const featuredRepos = [{
+        name: "Lyrics viewer",
+        url: "https://github.com/kelishrestha/lyrics-viewer",
+        description: "View lyrics and translations for songs with Genius API and lyrics API",
+        languages: ["Typescript"],
+        image: 'assets/applications/lyrics-viewer-logo.png',
+    },
+    {
+        name: 'Character coding',
+        url: 'https://github.com/kelishrestha/character-coding',
+        description: 'Creating characters with neural networks',
+        languages: ["Python"],
+        image: ''
+    },
+    {
+        name: 'Audit Tracker (ruby gem)',
+        url: 'https://github.com/kelishrestha/audit_tracker',
+        description: 'Auditing github PRs for security audits',
+        languages: ["Ruby"],
+        image: ''
+    },
+    {
+        name: 'Opentok Insights',
+        url: 'https://github.com/kelishrestha/ot_insights_api_react',
+        description: 'Opentok Insights API with React',
+        languages: ["React"],
+        image: ''
+    },
+    {
+        name: 'POEditor Viewer',
+        url: 'https://github.com/kelishrestha/poeditor_app',
+        description: 'View translations with POEditor API',
+        languages: ["Sinatra"],
+        image: ''
+    },
+    {
+        name: 'API Documentation',
+        url: 'https://github.com/kelishrestha/postman-doc-gen',
+        description: 'Creating api documentation with postman and swagger specs',
+        languages: ["Python", "Shell"],
+        image: ''
+    }
+]
 
 const iconsDirectory = path.join(process.cwd(), "icons");
 const categories = fs.readdirSync(iconsDirectory)
@@ -50,7 +93,9 @@ let content = `
   <p>
     <span>🌱 I’m currently learning <strong>Artificial Intelligence</strong></span>
     <br/>
-    <span>💬 Ask me about Ruby/Rails & ReactJS</span>
+    <span>💬 Ask me about Ruby/Rails, ReactJS, Project Management, Scrum</span>
+    <br/>
+    <span>🏅 Certified Scrum Master since 2020</span>
     <br/>
     <span>🤝 I’m available for freelancing.</span>
     <br/>
@@ -69,7 +114,20 @@ let content = `
     <img src="https://img.shields.io/badge/reactjs-blue?logo=react&style=for-the-badge" />&nbsp;
   </p>
 </section>
+<section id="featured-repos">
+  <h3>Featured Repositories</h3>
+  <ul>`
 
+featuredRepos.forEach(details => {
+    content += `<li>
+      <a href="${details.url}" target="_blank">
+        ${details.name} in ${_.join(details.languages, ', ')}
+      </a>
+    </li>`;
+});
+
+content += `</ul></section>\n`;
+content += `
 ---
 
 <section id="tech-stacks">
