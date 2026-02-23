@@ -22,7 +22,7 @@ jobs:
           filename: github-metrics.svg
 
           # Base sections
-          base: header, activity, community, repositories, metadata
+          base: header, community, repositories, metadata
 
           config_timezone: Asia/Kathmandu
           config_display: large
@@ -35,25 +35,12 @@ jobs:
           plugin_languages_details: percentage
           plugin_languages_analysis_timeout: 15
 
-          # Activity calendar
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
-
           # Notable repositories
           plugin_repositories: yes
           # plugin_repositories_featured: YOUR_USERNAME/project1,YOUR_USERNAME/project2
           plugin_repositories_affiliations: owner
-
-          # Recent activity
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 14
-          plugin_activity_filter: issue, pr, release
-
-          # Achievements (professional level)
-          plugin_achievements: yes
-          plugin_achievements_threshold: C
-          plugin_achievements_display: detailed
+          plugin_repositories_pinned: 6
+          plugin_repositories_starred: 6
 
           # Topics (security branding)
           plugin_topics: yes
