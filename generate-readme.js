@@ -5,7 +5,7 @@ const path = require("path");
 const USERNAME = "kelishrestha";
 const REPO = "kelishrestha";
 const BRANCH = "main";
-const orderedCategories = ['languages', 'frameworks', 'applications', 'platforms', 'packages'];
+const orderedCategories = ['languages', 'frameworks', 'databases', 'applications', 'platforms', 'packages'];
 
 const iconsDirectory = path.join(process.cwd(), "icons");
 const categories = fs.readdirSync(iconsDirectory)
@@ -29,9 +29,9 @@ let content = `
   <img src="${rawUrl("assets/cat-wave.gif")}" width="25%" />
   <h1>Hi, I'm Kelina</h1>
   <h2>
-    <img src="${rawUrl("assets/chicken-coder.gif")}" width="20" />&nbsp;
+    <img src="${rawUrl("assets/chicken-coder.gif")}" width="30" />&nbsp;
     Software Engineer | Project Manager
-    &nbsp;<img src="${rawUrl("assets/chicken-coder.gif")}" width="20" />
+    &nbsp;<img src="${rawUrl("assets/chicken-manager.gif")}" width="30" />
   </h2>
   <p>
   <span>🔐 Application Security | Backend Engineering | Scrum Master | Web Developer</span>
@@ -60,23 +60,32 @@ let content = `
 <section id="github-profile">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${USERNAME}&theme=radical&layout=compact&hide_border=true" />
 </section>
+<section id="specialization">
+  <h3>Specialization Languages/Frameworks</h3>
+  <p>
+    <img src="https://img.shields.io/badge/ruby-red?logo=ruby&style=for-the-badge" />&nbsp;
+    <img src="https://img.shields.io/badge/rails-red?logo=rubyonrails&style=for-the-badge" />&nbsp;
+    <img src="https://img.shields.io/badge/typescript-green?logo=typescript&style=for-the-badge" />&nbsp;
+    <img src="https://img.shields.io/badge/reactjs-blue?logo=react&style=for-the-badge" />&nbsp;
+  </p>
+</section>
 
 ---
 
 <section id="tech-stacks">
   <h2>
     <img src="${rawUrl("assets/code-animated.gif")}" width="20"/>&nbsp;
-    <span>Technical Stacks</span>
+    <span>Technical stacks I have worked with</span>
   </h2>
 `;
 
 orderedCategoriesWithFiles.forEach(category => {
             content += `\n
-  <h3>${_.capitalize(category.folder)}</h3>
+  <h3>${_.capitalize(_.replace(category.folder), /-/g, ' ')}</h3>
   \n
   <section>\n`;
             category.files.forEach(file => {
-                        content += `<img src="${rawUrl(`icons/${category.folder}/${file}`)}" width="50" />\n`;
+                        content += `<img src="${rawUrl(`icons/${category.folder}/${file}`)}" width="50" />&nbsp;&nbsp;\n`;
   });
   content += `</section>\n\n`;
 });
@@ -88,23 +97,23 @@ content += `
 
 <section id="github-stats">
   <h2>
-    <img src="${rawUrl("assets/bar-colored.gif")}" width="25"/>&nbsp;
+    <img src="${rawUrl("assets/bar-colored.gif")}" width="30"/>&nbsp;
     <span>Github Statistics</span>
   </h2>
-  <div>
+  <p align="center">
     <img src="https://streak-stats.demolab.com?user=kelishrestha&theme=synthwave&hide_border=true&border_radius=10" alt="GitHub Streak" />
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=${USERNAME}&theme=radical&layout=compact&hide_border=true" />
     <br/>
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=${USERNAME}&theme=radical&layout=compact&hide_border=true" />
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=${USERNAME}&theme=radical&layout=compact&hide_border=true" />
-  </div>
+  </p>
 </section>
 
 ---
 
 <section id="activity-graph">
   <h2>
-    <img src="${rawUrl("assets/robot-create.gif")}" width="20"/>&nbsp;
+    <img src="${rawUrl("assets/robot-create.gif")}" width="30"/>&nbsp;
     <span>Activity Graph</span>
   </h2>
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=${USERNAME}&theme=synthwave-84" />
@@ -114,12 +123,15 @@ content += `
 
 <section id="contact">
   <h2>
-    <img src="${rawUrl("assets/world.gif")}" width="20"/>&nbsp;
+    <img src="${rawUrl("assets/world.gif")}" width="30"/>&nbsp;
     <span>Connect</span>
   </h2>
   <p>
     <a href="https://www.linkedin.com/in/kelishrestha/">
       <img src="https://img.shields.io/badge/LinkedIn-Professional-blue?logo=linkedin&style=for-the-badge" />
+    </a>&nbsp;
+    <a href="https://www.kelinashrestha.com.np">
+      <img src="https://img.shields.io/badge/Website-Professional-blue?logo=website&style=for-the-badge" />
     </a>
   </p>
 </section>
