@@ -24,11 +24,11 @@
   <p>
     <span>🌱 I’m currently learning <strong>Artificial Intelligence</strong></span>
     <br/>
-    <span>💬 Ask me about Ruby/Rails, ReactJS, Project Management, Scrum</span>
-    <br/>
     <span>🏅 Certified Scrum Master since 2020</span>
     <br/>
     <span>🤝 I’m available for freelancing.</span>
+    <br/>
+    <span>💬 Ask me about Ruby/Rails, ReactJS, Project Management, Scrum</span>
     <br/>
     <span>🔍 Find my blogs in <a href="https://kleenash.medium.com/" target="_blank">Medium</a></span>
   </p>
@@ -49,28 +49,34 @@
   <h3>Featured Repositories</h3>
   <ul><li>
       <a href="https://github.com/kelishrestha/lyrics-viewer" target="_blank">
-        Lyrics viewer in Typescript
+        Lyrics viewer
       </a>
+      &nbsp; in Typescript
     </li><li>
       <a href="https://github.com/kelishrestha/character-coding" target="_blank">
-        Character coding in Python
+        Character coding
       </a>
+      &nbsp; in Python
     </li><li>
       <a href="https://github.com/kelishrestha/audit_tracker" target="_blank">
-        Audit Tracker (ruby gem) in Ruby
+        Audit Tracker (ruby gem)
       </a>
+      &nbsp; in Ruby
     </li><li>
       <a href="https://github.com/kelishrestha/ot_insights_api_react" target="_blank">
-        Opentok Insights in React
+        Opentok Insights
       </a>
+      &nbsp; in React
     </li><li>
       <a href="https://github.com/kelishrestha/poeditor_app" target="_blank">
-        POEditor Viewer in Sinatra
+        POEditor Viewer
       </a>
+      &nbsp; in Sinatra
     </li><li>
       <a href="https://github.com/kelishrestha/postman-doc-gen" target="_blank">
-        API Documentation in Python, Shell
+        API Documentation
       </a>
+      &nbsp; in Python, Shell
     </li></ul></section>
 
 ---
@@ -223,7 +229,7 @@
     <span>Github Statistics</span>
   </h2>
   <p align="center">
-    <img src="https://streak-stats.demolab.com?user=kelishrestha&theme=synthwave&hide_border=true&border_radius=10" alt="GitHub Streak" />
+    <img src="https://streak-stats.demolab.com?user=kelishrestha&theme=radical&hide_border=true&border_radius=10" alt="GitHub Streak" />
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kelishrestha&theme=radical&layout=compact&hide_border=true" />
     <br/>
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kelishrestha&theme=radical&layout=compact&hide_border=true" />

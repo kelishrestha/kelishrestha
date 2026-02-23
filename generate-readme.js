@@ -93,11 +93,11 @@ let content = `
   <p>
     <span>🌱 I’m currently learning <strong>Artificial Intelligence</strong></span>
     <br/>
-    <span>💬 Ask me about Ruby/Rails, ReactJS, Project Management, Scrum</span>
-    <br/>
     <span>🏅 Certified Scrum Master since 2020</span>
     <br/>
     <span>🤝 I’m available for freelancing.</span>
+    <br/>
+    <span>💬 Ask me about Ruby/Rails, ReactJS, Project Management, Scrum</span>
     <br/>
     <span>🔍 Find my blogs in <a href="https://kleenash.medium.com/" target="_blank">Medium</a></span>
   </p>
@@ -121,8 +121,9 @@ let content = `
 featuredRepos.forEach(details => {
     content += `<li>
       <a href="${details.url}" target="_blank">
-        ${details.name} in ${_.join(details.languages, ', ')}
+        ${details.name}
       </a>
+      &nbsp; in ${_.join(details.languages, ', ')}
     </li>`;
 });
 
@@ -159,7 +160,7 @@ content += `
     <span>Github Statistics</span>
   </h2>
   <p align="center">
-    <img src="https://streak-stats.demolab.com?user=kelishrestha&theme=synthwave&hide_border=true&border_radius=10" alt="GitHub Streak" />
+    <img src="https://streak-stats.demolab.com?user=${USERNAME}&theme=radical&hide_border=true&border_radius=10" alt="GitHub Streak" />
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=${USERNAME}&theme=radical&layout=compact&hide_border=true" />
     <br/>
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=${USERNAME}&theme=radical&layout=compact&hide_border=true" />
