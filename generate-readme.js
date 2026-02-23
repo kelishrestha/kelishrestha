@@ -28,9 +28,14 @@ let content = `
 <section id="banner" align="center">
   <img src="${rawUrl("assets/cat-wave.gif")}" width="25%" />
   <h1>Hi, I'm Kelina</h1>
-  <h2>Software Engineer</h2>
-  <p style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+  <h2>
+    <img src="${rawUrl("assets/chicken-coder.gif")}" width="20" />&nbsp;
+    Software Engineer | Project Manager
+    &nbsp;<img src="${rawUrl("assets/chicken-coder.gif")}" width="20" />
+  </h2>
+  <p>
   <span>🔐 Application Security | Backend Engineering | Scrum Master | Web Developer</span>
+  <br/>
   <span>📍 Nepal</span>
   </p>
 </section>
@@ -38,14 +43,17 @@ let content = `
 <img src="${rawUrl("assets/horizontal-line.gif")}" width="100%" />
 
 <section id="about">
-  <h2 style={{ gap: 5, display: 'flex', alignItems: 'center' }}>
-    <img src="${rawUrl("assets/paint-splash.gif")}" width="5%" style={{ verticalAlign: 'middle'}} />
+  <h2>
+    <img src="${rawUrl("assets/paint-splash.gif")}" width="20" />&nbsp;
     <span>Introduction</span>
   </h2>
-  <p style={{ gap: 6, display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+  <p>
     <span>🌱 I’m currently learning <strong>Artificial Intelligence</strong></span>
+    <br/>
     <span>💬 Ask me about Ruby/Rails & ReactJS</span>
+    <br/>
     <span>🤝 I’m available for freelancing.</span>
+    <br/>
     <span>🔍 Find my blogs in <a href="https://kleenash.medium.com/" target="_blank">Medium</a></span>
   </p>
 </section>
@@ -56,18 +64,17 @@ let content = `
 ---
 
 <section id="tech-stacks">
-  <h2 style={{ gap: 5, display: 'flex', alignItems: 'center' }}>
-    <img src="${rawUrl("assets/code-animated.gif")}" width="5%" style={{ verticalAlign: 'middle'}} />
+  <h2>
+    <img src="${rawUrl("assets/code-animated.gif")}" width="20"/>&nbsp;
     <span>Technical Stacks</span>
   </h2>
 `;
 
 orderedCategoriesWithFiles.forEach(category => {
-            content += `
-  \n
+            content += `\n
   <h3>${_.capitalize(category.folder)}</h3>
   \n
-  <section style={{ display: 'flex', gap: 4, alignItems: 'center', verticalAlign: 'middle', flexWrap: 'wrap' }}>\n`;
+  <section>\n`;
             category.files.forEach(file => {
                         content += `<img src="${rawUrl(`icons/${category.folder}/${file}`)}" width="50" />\n`;
   });
@@ -80,27 +87,24 @@ content += `
 ---
 
 <section id="github-stats">
-  <h2 style={{ gap: 5, display: 'flex', alignItems: 'center' }}>
-    <img src="${rawUrl("assets/bar-colored.gif")}" width="5%" style={{ verticalAlign: 'middle'}} />
+  <h2>
+    <img src="${rawUrl("assets/bar-colored.gif")}" width="25"/>&nbsp;
     <span>Github Statistics</span>
   </h2>
-  <div style={{ display: 'flex', gap: 10, flexDirection: 'column', alignItems: 'center', verticalAlign: 'middle', flexWrap: 'wrap' }}>
+  <div>
     <img src="https://streak-stats.demolab.com?user=kelishrestha&theme=synthwave&hide_border=true&border_radius=10" alt="GitHub Streak" />
-    <div style={{ display: 'flex', gap: 5, flexDirection: 'row', alignItems: 'center', verticalAlign: 'middle' }}>
-      <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=${USERNAME}&theme=radical&layout=compact&hide_border=true" />
-      <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=${USERNAME}&theme=radical&layout=compact&hide_border=true" />
-    </div>
-    <div style={{ display: 'flex', gap: 5, flexDirection: 'row', alignItems: 'center', verticalAlign: 'middle' }}>
-      <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=${USERNAME}&theme=radical&layout=compact&hide_border=true" />
-    </div>
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=${USERNAME}&theme=radical&layout=compact&hide_border=true" />
+    <br/>
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=${USERNAME}&theme=radical&layout=compact&hide_border=true" />
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=${USERNAME}&theme=radical&layout=compact&hide_border=true" />
   </div>
 </section>
 
 ---
 
 <section id="activity-graph">
-  <h2 style={{ gap: 5, display: 'flex', alignItems: 'center' }}>
-    <img src="${rawUrl("assets/robot-create.gif")}" width="5%" style={{ verticalAlign: 'middle'}} />
+  <h2>
+    <img src="${rawUrl("assets/robot-create.gif")}" width="20"/>&nbsp;
     <span>Activity Graph</span>
   </h2>
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=${USERNAME}&theme=synthwave-84" />
@@ -109,12 +113,11 @@ content += `
 ---
 
 <section id="contact">
-  <h2 style={{ gap: 5, display: 'flex', alignItems: 'center' }}>
-    <img src="${rawUrl("assets/world.gif")}" width="5%" style={{ verticalAlign: 'middle'}} />
+  <h2>
+    <img src="${rawUrl("assets/world.gif")}" width="20"/>&nbsp;
     <span>Connect</span>
   </h2>
-  <p style={{ display: 'flex', gap: 4, alignItems: 'center', verticalAlign: 'middle', flexWrap: 'wrap' }}>
-    You can find me on &nbsp;
+  <p>
     <a href="https://www.linkedin.com/in/kelishrestha/">
       <img src="https://img.shields.io/badge/LinkedIn-Professional-blue?logo=linkedin&style=for-the-badge" />
     </a>
