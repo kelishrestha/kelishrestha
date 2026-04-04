@@ -1,0 +1,63 @@
+name: "Kelina"
+location: "Nepal"
+role_title: "Software Engineer | Technical Project Manager"
+role_areas: "🔐 Application Security | Backend Engineering | Scrum Master | Web Developer"
+current_learning: "Artificial Intelligence & Security"
+certification_title: "Certified Scrum Master since 2020"
+available_for: "freelancing and hiring"
+ask_me_about: "Ruby/Rails, ReactJS, Project Management, Scrum"
+blog_url: "https://kleenash.medium.com/"
+blog_site_name: "Medium"
+featured_repos:
+  [
+    {
+      name: "Lyrics viewer",
+      url: "https://github.com/kelishrestha/lyrics-viewer",
+      demo_url: "https://lyrics-viewer-yaqu.onrender.com/",
+      description: "View lyrics and translations for songs with Genius API and lyrics API",
+      languages: ["Typescript"],
+      image: "assets/applications/lyrics-viewer-logo.png",
+    },
+    {
+      name: "Character coding",
+      url: "https://github.com/kelishrestha/character-coding",
+      demo_url: "",
+      description: "Creating characters with neural networks",
+      languages: ["Python"],
+      image: "",
+    },
+    {
+      name: "Audit Tracker (ruby gem)",
+      url: "https://github.com/kelishrestha/audit_tracker",
+      demo_url: "",
+      description: "Auditing github PRs for security audits",
+      languages: ["Ruby"],
+      image: "",
+    },
+    {
+      name: "Opentok Insights",
+      url: "https://github.com/kelishrestha/ot_insights_api_react",
+      demo_url: "https://kelishrestha.github.io/ot_insights_api_react/",
+      description: "Opentok Insights API with React",
+      languages: ["React"],
+      image: "",
+    },
+    {
+      name: "POEditor Viewer",
+      url: "https://github.com/kelishrestha/poeditor_app",
+      demo_url: "",
+      description: "View translations with POEditor API",
+      languages: ["Sinatra"],
+      image: "",
+    },
+    {
+      name: "API Documentation",
+      url: "https://github.com/kelishrestha/postman-doc-gen",
+      demo_url: "",
+      description: "Creating api documentation with postman and swagger specs",
+      languages: ["Python", "Shell"],
+      image: "",
+    },
+  ]
+linkedin_url: "https://www.linkedin.com/in/kelishrestha/"
+website_url: "https://www.kelinashrestha.com.np"
